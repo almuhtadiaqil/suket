@@ -1,0 +1,12 @@
+{
+
+	"PHP Tag": {
+		"prefix": "php",
+		"body": "<?php ;?>"
+	},
+	"Inline Echo": {
+		"prefix": "phpp",
+		"body": "<?= $1; ?>"
+	}
+
+}
