@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Cetak_SKU extends CI_Controller
+class Cetak_surat extends CI_Controller
 {
 
     public function __construct()

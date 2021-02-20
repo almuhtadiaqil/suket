@@ -3,12 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class M_surat_n1_n6 extends CI_Model
 {
-    private $_table = "surat_n1";
 
-    function getAll()
-    {
-        return $this->db->get('surat_n1');
-    }
     function getSKU()
     {
         return $this->db->get('sku');

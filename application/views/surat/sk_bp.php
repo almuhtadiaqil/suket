@@ -5,11 +5,11 @@
 		<a href="<?= base_url('user'); ?>" class="btn float-right bg-primary btn-sm text-white"><strong><i class="fas fa-home mr-1"></i>Beranda</strong></a>
 	</div>
 </nav>
-<form action="<?php echo base_url() . 'Surat/add_sk_usaha'; ?>" method="post">
+<form action="<?php echo base_url() . 'Surat/add_sk_bp'; ?>" method="post">
 	<div class="row text-left">
 		<div class="col-lg-12">
 			<div class="block-heading">
-				<h2>FORM SURAT KETERANGAN USAHA</h2>
+				<h2>FORM SURAT KETERANGAN BIAYA PENGUBURAN</h2>
 			</div>
 			<!-- Isian Form 1-->
 			<div class="container-fluid shadow p-3  mb-3 bg-white rounded m-3">
@@ -21,10 +21,7 @@
 						<label>Nama</label>
 						<input type="text" name="nama" class="form-control" id="nama" placeholder="Masukan Nama anda" value="<?= $user['nama']; ?>" required>
 					</div>
-					<div class="form-group col-md-6">
-						<label>NIK</label>
-						<input type="text" name="no_nik" class="form-control" id="no_nik" placeholder="Masukan NIK anda" value="<?= $user['no_nik']; ?>" required>
-					</div>
+					<input type="text" name="no_nik" class="form-control" id="no_nik" placeholder="Masukan NIK anda" value="<?= $user['no_nik']; ?>" hidden required>
 					<div class="form-group col-md-6">
 						<label>Agama</label>
 						<select name="agama" id="agama" class="form-control">
@@ -36,7 +33,6 @@
 							<option>Aliran Kepercayaan</option>
 						</select>
 					</div>
-
 				</div>
 				<div class="form-row">
 					<div class="form-group col-md-6">
@@ -86,6 +82,10 @@
 				<div class="form-group">
 					<label>Alamat</label>
 					<textarea class="form-control" name="alamat" id="alamat" rows="2" placeholder="<?= $user['alamat']; ?>" value="<?= $user['alamat']; ?>" required></textarea>
+				</div>
+				<div class="form-group">
+					<label>Keperluan</label>
+					<input type="text" class="form-control" name="keperluan" id="keperluan" required>
 				</div>
 				<div class="text-center">
 					<a href="<?= base_url('user') ?>" type="button" class="btn btn-danger mr-2"><i class="fas fa-times mr-2"></i>Batal</a>

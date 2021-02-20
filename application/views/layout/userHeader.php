@@ -25,6 +25,8 @@ if (!isset($_SESSION["login"])) {
     <link href="<?= base_url('assets/'); ?>/user/styles/custom-responsive-styles.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>/user/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/'); ?>/user/bootstrap/css/bootstrap.min.css">
+    <link href="<?= base_url('assets/'); ?>/user/styles/password.css" rel="stylesheet" type="text/css">
+
 
     <!--scripts-->
     <script type="text/javascript" src="<?= base_url('assets/'); ?>/user/scripts/jquery-3.2.1.min.js"></script>

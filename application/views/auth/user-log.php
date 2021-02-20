@@ -36,7 +36,7 @@
                         </div>
                         <button type="submit" class="btn btn-lg btn-primary btn-block text-uppercase">Sign In</button>
                         <hr class="my-4">
-                        <p class="text-center">Login sebagai Admin ? <a href="<?= base_url('auth/adlog'); ?>" class="ml-2"><i class="fas fa-arrow-right"></i></a></p>
+                        <p class="text-center">Daftar Akun<a href="<?= base_url('auth/regis'); ?>" class="ml-2"><i class="fas fa-arrow-right"></i></a></p>
                     </form>
                 </div>
             </div>

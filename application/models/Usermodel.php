@@ -7,6 +7,10 @@ class Usermodel extends CI_Model
     {
         return $this->db->get('user');
     }
+    function insert_data($table, $data)
+    {
+        $this->db->insert($table, $data);
+    }
     function update_data($where, $data, $table)
     {
         $this->db->where($where);
