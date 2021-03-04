@@ -89,4 +89,26 @@ class Tambah_warga extends CI_Controller
 		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
 		redirect('user');
 	}
+	public function update_kehilangan_batal($id_surat_kehilangan)
+	{
+		$where = array(
+			'id_surat_kehilangan' => $id_surat_kehilangan
+		);
+		$data = array(
+			'status_surat' => "Dibatalkan",
+		);
+		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		redirect('user');
+	}
+	public function update_ptt_batal($id_surat_ptt)
+	{
+		$where = array(
+			'id_surat_ptt' => $id_surat_ptt
+		);
+		$data = array(
+			'status_surat' => "Dibatalkan",
+		);
+		$this->M_surat_n1_n6->update_data($where, $data, 'surat_n1');
+		redirect('user');
+	}
 }

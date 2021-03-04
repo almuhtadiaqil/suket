@@ -25,6 +25,8 @@ class User extends CI_Controller
 			'data_bmr' => $this->db->get_where('sk_bmr', ['no_nik' => $this->session->userdata('no_nik')])->result_array(),
 			'data_belummenikah' => $this->db->get_where('sk_belummenikah', ['no_nik' => $this->session->userdata('no_nik')])->result_array(),
 			'data_bp' => $this->db->get_where('sk_bp', ['no_nik' => $this->session->userdata('no_nik')])->result_array(),
+			'data_kehilangan' => $this->db->get_where('sk_kehilangan', ['no_nik' => $this->session->userdata('no_nik')])->result_array(),
+			'data_ptt' => $this->db->get_where('sk_ptt', ['no_nik' => $this->session->userdata('no_nik')])->result_array(),
 		];
 
 		$this->load->view('layout/userHeader', $data);
@@ -192,6 +194,42 @@ class User extends CI_Controller
 		$this->session->userdata('no_nik')])->row_array();
 		$this->load->view('layout/userHeader', $data);
 		$this->load->view('surat/sk_janda', $data);
+		$this->load->view('layout/userFooter');
+	}
+	public function sk_kehilangan()
+	{
+		$data['title'] = 'Kelurahan Muarasanding | Surat Keterangan Kehilangan';
+		$data['user'] = $this->db->get_where('user', ['no_nik' =>
+		$this->session->userdata('no_nik')])->row_array();
+		$this->load->view('layout/userHeader', $data);
+		$this->load->view('surat/sk_kehilangan', $data);
+		$this->load->view('layout/userFooter');
+	}
+	public function sk_penghasilan()
+	{
+		$data['title'] = 'Kelurahan Muarasanding | Surat Keterangan Penghasilan';
+		$data['user'] = $this->db->get_where('user', ['no_nik' =>
+		$this->session->userdata('no_nik')])->row_array();
+		$this->load->view('layout/userHeader', $data);
+		$this->load->view('surat/sk_penghasilan', $data);
+		$this->load->view('layout/userFooter');
+	}
+	public function sk_ptt()
+	{
+		$data['title'] = 'Kelurahan Muarasanding | Surat Keterangan Pernikahan Tidak Tercatat';
+		$data['user'] = $this->db->get_where('user', ['no_nik' =>
+		$this->session->userdata('no_nik')])->row_array();
+		$this->load->view('layout/userHeader', $data);
+		$this->load->view('surat/sk_ptt', $data);
+		$this->load->view('layout/userFooter');
+	}
+	public function sk_rumahrubuh()
+	{
+		$data['title'] = 'Kelurahan Muarasanding | Surat Keterangan Rumah Rubuh';
+		$data['user'] = $this->db->get_where('user', ['no_nik' =>
+		$this->session->userdata('no_nik')])->row_array();
+		$this->load->view('layout/userHeader', $data);
+		$this->load->view('surat/sk_rumahrubuh', $data);
 		$this->load->view('layout/userFooter');
 	}
 }

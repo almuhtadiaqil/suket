@@ -10,7 +10,7 @@ class Surat extends CI_Controller
 		$this->load->model("M_surat_n1_n6");
 		$this->load->helper('date');
 	}
-	public function add()
+	public function add_sk_usaha()
 	{
 		$nama = $this->input->post('nama');
 		$no_nik = $this->input->post('no_nik');
@@ -355,6 +355,180 @@ class Surat extends CI_Controller
 			'status_surat' => $status_surat
 		];
 		$this->M_surat_n1_n6->save($data, 'sk_janda');
+		$this->session->set_flashdata('success', 'Berhasil disimpan');
+		redirect('user/#riwayat');
+	}
+	public function add_sk_kehilangan()
+	{
+		$no_nik = $this->input->post('no_nik');
+		$nama = $this->input->post('nama');
+		$agama = $this->input->post('agama');
+		$tempat_lahir = $this->input->post('tempat_lahir');
+		$tanggal_lahir = $this->input->post('tanggal_lahir');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
+		$pekerjaan = $this->input->post('pekerjaan');
+		$kab_kota = $this->input->post('kab_kota');
+		$kecamatan = $this->input->post('kecamatan');
+		$desa = $this->input->post('kelurahan');
+		$RT = $this->input->post('rt');
+		$RW = $this->input->post('rw');
+		$alamat = $this->input->post('alamat');
+		$barang_hilang = $this->input->post('barang_hilang');
+		$no_seri = $this->input->post('no_seri');
+		$nama_surat = 'Surat Keterangan Kehilangan';
+		$today = mdate('%Y-%m-%d', now());
+		$status_surat = 'Pending';
+		$data = [
+			'no_nik' => $no_nik,
+			'nama' => $nama,
+			'tempat_lahir' => $tempat_lahir,
+			'tanggal_lahir' => $tanggal_lahir,
+			'jenis_kelamin' => $jenis_kelamin,
+			'agama' => $agama,
+			'pekerjaan' => $pekerjaan,
+			'kab_kota' => $kab_kota,
+			'kecamatan' => $kecamatan,
+			'desa' => $desa,
+			'rt' => $RT,
+			'rw' => $RW,
+			'alamat' => $alamat,
+			'barang_hilang' => $barang_hilang,
+			'no_seri' => $no_seri,
+			'jenis_surat' => $nama_surat,
+			'tgl_ajukan_surat' => $today,
+			'status_surat' => $status_surat
+		];
+		$this->M_surat_n1_n6->save($data, 'sk_kehilangan');
+		$this->session->set_flashdata('success', 'Berhasil disimpan');
+		redirect('user/#riwayat');
+	}
+	public function add_sk_penghasilan()
+	{
+		$no_nik = $this->input->post('no_nik');
+		$nama = $this->input->post('nama');
+		$agama = $this->input->post('agama');
+		$tempat_lahir = $this->input->post('tempat_lahir');
+		$tanggal_lahir = $this->input->post('tanggal_lahir');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
+		$pekerjaan = $this->input->post('pekerjaan');
+		$kab_kota = $this->input->post('kab_kota');
+		$kecamatan = $this->input->post('kecamatan');
+		$desa = $this->input->post('kelurahan');
+		$RT = $this->input->post('rt');
+		$RW = $this->input->post('rw');
+		$alamat = $this->input->post('alamat');
+		$penghasilan = $this->input->post('penghasilan');
+		$terbilang = $this->input->post('terbilang');
+		$nama_surat = 'Surat Keterangan Penghasilan';
+		$today = mdate('%Y-%m-%d', now());
+		$status_surat = 'Pending';
+		$data = [
+			'no_nik' => $no_nik,
+			'nama' => $nama,
+			'tempat_lahir' => $tempat_lahir,
+			'tanggal_lahir' => $tanggal_lahir,
+			'jenis_kelamin' => $jenis_kelamin,
+			'agama' => $agama,
+			'pekerjaan' => $pekerjaan,
+			'kab_kota' => $kab_kota,
+			'kecamatan' => $kecamatan,
+			'desa' => $desa,
+			'rt' => $RT,
+			'rw' => $RW,
+			'alamat' => $alamat,
+			'penghasilan' => $penghasilan,
+			'terbilang' => $terbilang,
+			'jenis_surat' => $nama_surat,
+			'tgl_ajukan_surat' => $today,
+			'status_surat' => $status_surat
+		];
+		$this->M_surat_n1_n6->save($data, 'sk_penghasilan');
+		$this->session->set_flashdata('success', 'Berhasil disimpan');
+		redirect('user/#riwayat');
+	}
+	public function add_sk_ptt()
+	{
+		$no_nik = $this->input->post('no_nik');
+		$nama = $this->input->post('nama');
+		$agama = $this->input->post('agama');
+		$tempat_lahir = $this->input->post('tempat_lahir');
+		$tanggal_lahir = $this->input->post('tanggal_lahir');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
+		$pekerjaan = $this->input->post('pekerjaan');
+		$kab_kota = $this->input->post('kab_kota');
+		$kecamatan = $this->input->post('kecamatan');
+		$desa = $this->input->post('kelurahan');
+		$RT = $this->input->post('rt');
+		$RW = $this->input->post('rw');
+		$alamat = $this->input->post('alamat');
+		$nama_surat = 'Surat Keterangan Pernikahan Tidak Tercatat';
+		$today = mdate('%Y-%m-%d', now());
+		$status_surat = 'Pending';
+		$data = [
+			'no_nik' => $no_nik,
+			'nama' => $nama,
+			'tempat_lahir' => $tempat_lahir,
+			'tanggal_lahir' => $tanggal_lahir,
+			'jenis_kelamin' => $jenis_kelamin,
+			'agama' => $agama,
+			'pekerjaan' => $pekerjaan,
+			'kab_kota' => $kab_kota,
+			'kecamatan' => $kecamatan,
+			'desa' => $desa,
+			'rt' => $RT,
+			'rw' => $RW,
+			'alamat' => $alamat,
+			'jenis_surat' => $nama_surat,
+			'tgl_ajukan_surat' => $today,
+			'status_surat' => $status_surat
+		];
+		$this->M_surat_n1_n6->save($data, 'sk_ptt');
+		$this->session->set_flashdata('success', 'Berhasil disimpan');
+		redirect('user/#riwayat');
+	}
+	public function add_sk_rumahrubuh()
+	{
+		$no_nik = $this->input->post('no_nik');
+		$nama = $this->input->post('nama');
+		$agama = $this->input->post('agama');
+		$tempat_lahir = $this->input->post('tempat_lahir');
+		$tanggal_lahir = $this->input->post('tanggal_lahir');
+		$jenis_kelamin = $this->input->post('jenis_kelamin');
+		$pekerjaan = $this->input->post('pekerjaan');
+		$kab_kota = $this->input->post('kab_kota');
+		$kecamatan = $this->input->post('kecamatan');
+		$desa = $this->input->post('kelurahan');
+		$RT = $this->input->post('rt');
+		$RW = $this->input->post('rw');
+		$alamat = $this->input->post('alamat');
+		$tgl_kejadian = $this->input->post('tanggal_kejadian');
+		$waktu_kejadian = $this->input->post('waktu_kekadian');
+		$kerugian = $this->input->post('kerugian');
+		$nama_surat = 'Surat Keterangan Rumah Rubuh';
+		$today = mdate('%Y-%m-%d', now());
+		$status_surat = 'Pending';
+		$data = [
+			'no_nik' => $no_nik,
+			'nama' => $nama,
+			'tempat_lahir' => $tempat_lahir,
+			'tanggal_lahir' => $tanggal_lahir,
+			'jenis_kelamin' => $jenis_kelamin,
+			'agama' => $agama,
+			'pekerjaan' => $pekerjaan,
+			'kab_kota' => $kab_kota,
+			'kecamatan' => $kecamatan,
+			'desa' => $desa,
+			'rt' => $RT,
+			'rw' => $RW,
+			'alamat' => $alamat,
+			'tgl_kejadian' => $tgl_kejadian,
+			'waktu_kejadian' => $waktu_kejadian,
+			'kerugian' => $kerugian,
+			'jenis_surat' => $nama_surat,
+			'tgl_ajukan_surat' => $today,
+			'status_surat' => $status_surat
+		];
+		$this->M_surat_n1_n6->save($data, 'sk_rumahrubuh');
 		$this->session->set_flashdata('success', 'Berhasil disimpan');
 		redirect('user/#riwayat');
 	}

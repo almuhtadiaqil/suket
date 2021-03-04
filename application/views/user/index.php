@@ -90,10 +90,19 @@
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
-					<h5 class="card-title">SKKB</h5>
-					<p>Surat Keterangan Kelakuan Baik</p>
+					<h5 class="card-title">BELUM</h5>
+					<p>Surat Keterangan Domisili</p>
 					<hr>
 					<a href="<?= base_url('user/sk_kelakuanbaik'); ?>" class="btn btn-primary">BUAT</a>
+				</div>
+			</div>
+			<div class="card pt-3">
+				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
+				<div class="card-body">
+					<h5 class="card-title">BELUM</h5>
+					<p>Surat Keterangan Bepergian</p>
+					<hr>
+					<a href="<?= base_url('user/sk_bedanama'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 			</div>
 			<div class="card pt-3">
@@ -103,15 +112,6 @@
 					<p>Surat Keterangan Ahli Waris</p>
 					<hr>
 					<a href="<?= base_url('user/sk_waris'); ?>" class="btn btn-primary">BUAT</a>
-				</div>
-			</div>
-			<div class="card pt-3">
-				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
-				<div class="card-body">
-					<h5 class="card-title">SKBN</h5>
-					<p>Surat Keterangan Beda Nama</p>
-					<hr>
-					<a href="<?= base_url('user/sk_bedanama'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 			</div>
 		</div>
@@ -146,8 +146,8 @@
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
-					<h5 class="card-title">BELUM</h5>
-					<p>Surat Keterangan Bepergian</p>
+					<h5 class="card-title">SKBN</h5>
+					<p>Surat Keterangan Beda Nama</p>
 					<hr>
 					<a href="<?= base_url('user/sk_bedanama'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
@@ -166,10 +166,19 @@
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
-					<h5 class="card-title">BELUM</h5>
-					<p>Surat Keterangan Domisili</p>
+					<h5 class="card-title">SKKB</h5>
+					<p>Surat Keterangan Kelakuan Baik</p>
 					<hr>
 					<a href="<?= base_url('user/sk_kelakuanbaik'); ?>" class="btn btn-primary">BUAT</a>
+				</div>
+			</div>
+			<div class="card pt-3">
+				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
+				<div class="card-body">
+					<h5 class="card-title">SKKH</h5>
+					<p>Surat Keterangan Kehilangan</p>
+					<hr>
+					<a href="<?= base_url('user/sk_kehilangan'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 			</div>
 			<div class="card pt-3">
@@ -181,13 +190,53 @@
 					<a href="<?= base_url('user/sk_janda'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 			</div>
+		</div>
+		<div class="card-deck m-3">
 			<div class="card pt-3">
 				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
 				<div class="card-body">
-					<h5 class="card-title">SKKH</h5>
-					<p>Surat Keterangan Kehilangan</p>
+					<h5 class="card-title">SKPH</h5>
+					<p>Surat Keterangan Penghasilan</p>
 					<hr>
-					<a href="<?= base_url('user/sk_bedanama'); ?>" class="btn btn-primary">BUAT</a>
+					<a href="<?= base_url('user/sk_penghasilan'); ?>" class="btn btn-primary">BUAT</a>
+				</div>
+			</div>
+			<div class="card pt-3">
+				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
+				<div class="card-body">
+					<h5 class="card-title">SKPTT</h5>
+					<p>Surat Keterangan Pernikahan Tidak Tercatat</p>
+					<hr>
+					<a href="<?= base_url('user/sk_ptt'); ?>" class="btn btn-primary">BUAT</a>
+				</div>
+			</div>
+			<div class="card pt-3">
+				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
+				<div class="card-body">
+					<h5 class="card-title">SKRB</h5>
+					<p>Surat Keterangan Rumah Rubuh</p>
+					<hr>
+					<a href="<?= base_url('user/sk_rumahrubuh'); ?>" class="btn btn-primary">BUAT</a>
+				</div>
+			</div>
+			<div class="card pt-3">
+				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
+				<div class="card-body">
+					<h5 class="card-title">BELUM</h5>
+					<p>Surat Keterangan Taksiran Harga Tanah</p>
+					<hr>
+					<a href="<?= base_url('user/sk_janda'); ?>" class="btn btn-primary">BUAT</a>
+				</div>
+			</div>
+		</div>
+		<div class="card-deck m-3">
+			<div class="card pt-3">
+				<img src="<?= base_url('assets/'); ?>/user/images/page.svg" alt="" style="width: 65px; margin-left: auto; margin-right: auto;">
+				<div class="card-body">
+					<h5 class="card-title">upload gambar</h5>
+					<p>Coba Upload Gambar</p>
+					<hr>
+					<a href="<?= base_url('coba'); ?>" class="btn btn-primary">BUAT</a>
 				</div>
 			</div>
 		</div>
@@ -380,6 +429,50 @@
 				<tr>
 					<th><b>Surat Keterangan Janda</b></th>
 				</tr>
+				<tr>
+					<th><b>Surat Keterangan Kehilangan</b></th>
+				</tr>
+				<?php
+				foreach ($data_kehilangan as $data_kehilangan) : ?>
+					<tr>
+						<th scope="row"><?= $i++ ?></th>
+						<td><?= $data_kehilangan['jenis_surat'] ?></td>
+						<td><?= $data_kehilangan['tgl_ajukan_surat'] ?></td>
+						<td><span class="badge badge-<?= ($data_kehilangan['status_surat'] == 'Diterima') ? 'success' : (($data_kehilangan['status_surat'] == 'Ditolak' || $data_kehilangan['status_surat'] == 'Dibatalkan') ? 'danger' : 'warning'); ?>"><?= $data_kehilangan['status_surat'] ?></span></td>
+						<?php if ($data_kehilangan['status_surat'] == 'Pending') : ?>
+							<td>
+								<button class="btn btn-sm bg-primary mr-2 text-white"><i class="fas fa-search-plus"></i> Detail</button>
+								<a href="<?= base_url('Tambah_warga/update_kehilangan_batal/' . $data_kehilangan['id_surat_kehilangan']); ?>" class="btn btn-sm bg-danger text-white"><i class="fas fa-window-close"></i> Batalkan</a>
+							</td>
+						<?php else : ?>
+							<td>
+								<button type="button" class="btn btn-sm bg-primary mr-2 text-white" data-toggle="modal" data-target="#modalDetail"><i class="fas fa-search-plus"></i> Detail</button>
+							</td>
+						<?php endif; ?>
+					</tr>
+				<?php endforeach; ?>
+				<tr>
+					<th><b>Surat Keterangan Pernikahan Tidak Tercatat</b></th>
+				</tr>
+				<?php
+				foreach ($data_ptt as $data_ptt) : ?>
+					<tr>
+						<th scope="row"><?= $i++ ?></th>
+						<td><?= $data_ptt['jenis_surat'] ?></td>
+						<td><?= $data_ptt['tgl_ajukan_surat'] ?></td>
+						<td><span class="badge badge-<?= ($data_ptt['status_surat'] == 'Diterima') ? 'success' : (($data_ptt['status_surat'] == 'Ditolak' || $data_ptt['status_surat'] == 'Dibatalkan') ? 'danger' : 'warning'); ?>"><?= $data_ptt['status_surat'] ?></span></td>
+						<?php if ($data_ptt['status_surat'] == 'Pending') : ?>
+							<td>
+								<button class="btn btn-sm bg-primary mr-2 text-white"><i class="fas fa-search-plus"></i> Detail</button>
+								<a href="<?= base_url('Tambah_warga/update_ptt_batal/' . $data_ptt['id_surat_ptt']); ?>" class="btn btn-sm bg-danger text-white"><i class="fas fa-window-close"></i> Batalkan</a>
+							</td>
+						<?php else : ?>
+							<td>
+								<button type="button" class="btn btn-sm bg-primary mr-2 text-white" data-toggle="modal" data-target="#modalDetail"><i class="fas fa-search-plus"></i> Detail</button>
+							</td>
+						<?php endif; ?>
+					</tr>
+				<?php endforeach; ?>
 			</tbody>
 
 			<!-- Modal -->
